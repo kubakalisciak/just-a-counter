@@ -27,6 +27,7 @@ button {
     padding: 10px;
     background-color: #eee;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
     border-radius: 5px;
     border: #333 solid 2px;
     width: 50px;
@@ -36,5 +37,5 @@ button {
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding-top: 10px;
+    padding-top: 10px
 }
