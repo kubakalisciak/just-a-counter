@@ -19,16 +19,22 @@ else {
 
 function update(number) {
     if (number < 0 || number > 9999 || !Number.isInteger(number)) {
-        throw new Error("Number must be an integer between 0 and 9999");
+        counter = 0;
+        span1.textContent = "0";
+        span2.textContent = "0";
+        span3.textContent = "0";
+        span4.textContent = "0";
     }
-    
-    const numStr = number.toString().padStart(4, '0');
-    const digitArray = numStr.split('').map(digit => parseInt(digit));
-    
-    span1.textContent = digitArray[0];
-    span2.textContent = digitArray[1];
-    span3.textContent = digitArray[2];
-    span4.textContent = digitArray[3];
+    else {
+        const numStr = number.toString().padStart(4, '0');
+        const digitArray = numStr.split('').map(digit => parseInt(digit));
+        
+        span1.textContent = digitArray[0];
+        span2.textContent = digitArray[1];
+        span3.textContent = digitArray[2];
+        span4.textContent = digitArray[3];
+    }
+
 }
 
 plusBtn.onclick = () => {

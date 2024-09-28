@@ -2,6 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 98vh;
     background-color: #333;
 }
@@ -38,4 +39,35 @@ button {
     justify-content: center;
     gap: 10px;
     padding-top: 10px
+}
+.cookies {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #aaa;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.cookies button {
+    border-color: #2f2;
+    width: 100%;
+} 
+#plusBtn {
+    flex-grow: 3;
+    border-color: #44f;
+}
+#minusBtn {
+    flex-grow: 3;
+    border-color: #f44; 
+}
+#resetBtn {
+    flex-grow: 2;
+    border-color: #333;
+}
+.hidden {
+    display: none;
 }
