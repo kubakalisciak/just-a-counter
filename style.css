@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    background-color: #333;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #aaa;
+    box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+    padding: 20px;
+    border-radius: 10px;
+}
+span {
+    font-size: 10vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    padding: 0.5vh;
+    border-radius: 0.5vh;
+    border: 0.25vh solid black;
+    background-color: #eee;
+}
+button {
+    padding: 10px;
+    background-color: #eee;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 5px;
+    border: #333 solid 2px;
+    width: 50px;
+    box-sizing: border-box;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 10px;
+}
